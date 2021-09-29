@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/usuarios_insere_e_lista', function () {
+    $umUser = new User;
+    $umUser ->name = 'Danillo';
+    $timestamp = date("Y-m-d-h-i-sa");
+    $umUser->email = 'asdf@.com'.$timestamp;
+    $umUser->password = '123';
+    $umUser->save();
+    return User::all();
 });
