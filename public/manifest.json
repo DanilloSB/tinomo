@@ -1,0 +1,20 @@
+{
+    "name": "Tinomo TCC",
+    "short_name": "Tinomo",
+    "description": "WEB APP do site da Tinomo",
+    "display": "fullscreen",
+    "start_url":"http://127.0.0.1:8000/",    
+    "scope": "/",
+    
+    "icons": [
+        {
+            "src": "icon/app-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon/app-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }]
+}

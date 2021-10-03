@@ -14,8 +14,8 @@ use App\Models\User;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('site.home');
+})->name('site.home');
 
 Route::get('/usuarios_insere_e_lista', function () {
     $umUser = new User;
