@@ -13,6 +13,6 @@ class Cliente extends Model
         'nome_cliente',
         'end_cliente',
         'telefone_cliente',
-        
+        'email_cliente'
     ];
 }
