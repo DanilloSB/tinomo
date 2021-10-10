@@ -13,7 +13,7 @@ class CreateAdministradorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('administradors', function (Blueprint $table) {
+        Schema::create('administrador', function (Blueprint $table) {
             $table->id();
             $table->string('nome_administrador');
             $table->string('email_administrador')->unique();
