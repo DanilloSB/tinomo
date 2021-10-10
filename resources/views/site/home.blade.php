@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-<div class="container">
+<div class="container py-5">
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Tinomo-Prestadores Autonomos de Serviço</h1>
-  <p>Escolha por um serviço, com os melhores e confiaveis profissionais autonomos.</p> 
+  <p>Escolha um serviço, com os melhores e confiaveis profissionais autonomos.</p> 
 </div>
 
 <div class="container" style="margin-top:30px">

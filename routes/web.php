@@ -25,6 +25,10 @@ Route::get('/quemsomos', function () {
     return view('site.quemsomos');
 })->name('site.whoweare');
 
+Route::get('/login', function () {
+    return view('site.login');
+})->name('site.login');
+
 Route::get('/usuarios_insere_e_lista', function () {
     $umUser = new User;
     $umUser ->name = 'Danillo';

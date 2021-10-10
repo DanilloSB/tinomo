@@ -25,14 +25,17 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('site.home') }}">Home</a>
+        <a class="nav-link {{ (Route::current()->getName() === 'site.home' ? 'active' : '') }}" href="{{ route('site.home') }}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('site.contact') }}">Contato</a>
+        <a class="nav-link {{ (Route::current()->getName() === 'site.contact' ? 'active' : '') }}" href="{{ route('site.contact') }}">Contato</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('site.whoweare') }}">Quem Somos</a>
-      </li>    
+        <a class="nav-link {{ (Route::current()->getName() === 'site.whoweare' ? 'active' : '') }}" href="{{ route('site.whoweare') }}">Quem Somos</a>
+      </li>
+      <li class="nav-item">
+      <a class="btn btn-light" href="{{ route('site.login') }}" >Login</a>
+      </li>   
     </ul>
   </div>  
 </nav>
