@@ -19,7 +19,6 @@ class CreateUsuariosTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('usuario_logado');
-            $table->remenberToken();
             $table->timestamps();
         });
     }
