@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('site.home');
 })->name('site.home');
 
+Route::get('/contato', function () {
+    return view('site.contato');
+})->name('site.contact');
+
+Route::get('/quemsomos', function () {
+    return view('site.quemsomos');
+})->name('site.whoweare');
+
 Route::get('/usuarios_insere_e_lista', function () {
     $umUser = new User;
     $umUser ->name = 'Danillo';
