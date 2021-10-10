@@ -3,9 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Eloquent\Model;
 
-class CreateClientesTable extends Migration
+class CreateFormadepagamentosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,12 +13,10 @@ class CreateClientesTable extends Migration
      */
     public function up()
     {
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('formadepagamentos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome_cliente');
-            $table->string('end_cliente');
-            $table->string('telefone_cliente');
-            $table->string('email_cliente')->unique();
+            $table->string('forma_pagamento');
+            $table->string('descricao');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateClientesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clientes');
+        Schema::dropIfExists('formadepagamentos');
     }
 }

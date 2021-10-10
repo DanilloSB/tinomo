@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class cliente extends Model
+class prestadorServicos extends Model
 {
     use HasFactory;
-
     protected $fillable = [
-        'nome_cliente',
-        'end_cliente',
-        'telefone_cliente',
-        'email_cliente',
+        'nome_prestador',
+        'end_prestador',
+        'telefone_prestador',
+        'email_prestador',
+        'cpf_prestador',
     ];
 }

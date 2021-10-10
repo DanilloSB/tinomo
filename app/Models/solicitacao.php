@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class cliente extends Model
+class solicitacao extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'nome_cliente',
-        'end_cliente',
-        'telefone_cliente',
-        'email_cliente',
+        'numero_servico',
+        'data_servico',
+        'nome_prestador',
     ];
 }
